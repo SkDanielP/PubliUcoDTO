@@ -8,11 +8,15 @@ public final class EstadoTipoRelacionInstitucionDTO {
 	private String nombre;
 	private String descripcion;
 	
+	public static final String valorDefectoNombre = "activo";
+	public static final String valorDefectoDescripcion = "descripcion vacia";
+
+	
 	public EstadoTipoRelacionInstitucionDTO() {
 		super();
 		setIdentificador(identificador);
-		setNombre("");
-		setDescripcion("");
+		setNombre(valorDefectoNombre);
+		setDescripcion(valorDefectoDescripcion);
 	}
 
 	
