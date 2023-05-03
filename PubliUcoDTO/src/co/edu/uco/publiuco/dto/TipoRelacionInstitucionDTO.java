@@ -36,6 +36,7 @@ public class TipoRelacionInstitucionDTO {
 		return new EstadoTipoRelacionInstitucionDTO();
 	}
 	
+	
 	public final UUID getIdentificador() {
 		return identificador;
 	}
