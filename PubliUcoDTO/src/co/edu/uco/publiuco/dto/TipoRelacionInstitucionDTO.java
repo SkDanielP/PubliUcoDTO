@@ -32,8 +32,8 @@ public class TipoRelacionInstitucionDTO {
 		setEstado(EstadoTipoRelacionInstitucionDTO.create());
 	}
 	
-	public static EstadoTipoRelacionInstitucionDTO create() {
-		return new EstadoTipoRelacionInstitucionDTO();
+	public static TipoRelacionInstitucionDTO create() {
+		return new TipoRelacionInstitucionDTO();
 	}
 	
 	
