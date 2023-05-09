@@ -6,20 +6,20 @@ import co.edu.uco.publiuco.crosscutting.utils.UtilUUID;
 
 public class EstadoLectorDTO {
     private UUID identificador;
-    private String estado;
+    private String nombre;
     private String descripcion;
 
-    public EstadoLectorDTO(UUID identificador, String estado, String descripcion) {
+    public EstadoLectorDTO(UUID identificador, String Nombre, String descripcion) {
         super();
         setIdentificador(identificador);
-        setEstado(estado);
+        setNombre(nombre);
         setDescripcion(descripcion);
     }
 
     public EstadoLectorDTO() {
         super();
         setIdentificador(UtilUUID.DEFAULT_UUID);
-        setEstado(UtilText.getUtilText().getDefaultValue());
+        setNombre(UtilText.getUtilText().getDefaultValue());
         setDescripcion(UtilText.EMPTY);
     }
 
@@ -36,12 +36,12 @@ public class EstadoLectorDTO {
         return this;
     }
 
-    public final String getEstado() {
-        return estado;
+    public final String getNombre() {
+        return nombre;
     }
 
-    public final EstadoLectorDTO setEstado(final String estado) {
-        this.estado = UtilText.getUtilText().applyTrim(estado);
+    public final EstadoLectorDTO setNombre(final String nombre) {
+        this.nombre = UtilText.getUtilText().applyTrim(nombre);
         return this;
     }
 
@@ -53,4 +53,5 @@ public class EstadoLectorDTO {
         this.descripcion = UtilText.getUtilText().applyTrim(descripcion);
         return this;
     }
+
 }
